@@ -1,6 +1,7 @@
 # Здесь должна находиться основная логика программы. by Sihionok.
 import telebot
 from telebot import types
+import config
 
 bot = telebot.TeleBot(config.token)
 
