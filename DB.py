@@ -18,8 +18,10 @@ def adddb():
     FI = input('Введи Фамилию Имя: ')
     UID = randint(100000, 999999)
     sql.execute(f'INSERT INTO users (FI, UID)'
+                f""
                 f'VALUES (?, ?)', (FI, UID))
     db.commit()
+
 
 
 def checkUIDinDB():
@@ -31,7 +33,7 @@ def checkUIDinDB():
         return UIDcheck
     else:
         return 0
-    #db.commit()
+    db.commit()
 
 
 
