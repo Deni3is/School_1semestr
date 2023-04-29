@@ -18,7 +18,7 @@ def adddb():
     FI = input('Введи Фамилию Имя: ')
     UID = randint(100000, 999999)
     sql.execute(f'INSERT INTO users (FI, UID)'
-                f""
+                f'SELECT * FROM users (FI, UID)'
                 f'VALUES (?, ?)', (FI, UID))
     db.commit()
 
