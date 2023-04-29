@@ -3,6 +3,7 @@ def WAIT():
     f = open('file.txt', 'r')
     b = f.read().split('\n')
     d=[]
+    #d.append(1)
     for i in range(len(b)):
         print('b',b[i])
         c=b[i].split(' ')
@@ -16,14 +17,14 @@ def WAIT():
     l=0
     for m in range(len(d)):
         l=l+1
-        if l == 0:
-            id.append(d[m])
+        print('l',l)
         if l == 1:
-            key.append(d[m])
+            id.append(d[m])
         if l == 2:
+            key.append(d[m])
+        if l == 3:
             uid.append(d[m])
-        else:
-            l=0
+            l=0        
     print('id',id)
     print('key',key)
     print('uid',uid)
