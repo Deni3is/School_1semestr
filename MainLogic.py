@@ -9,6 +9,7 @@ def start(message):
     markup = types.ReplyKeyboardMarkup(resize_keyboard=True)
     btn1 = types.KeyboardButton("/start")
     btn2 = types.KeyboardButton("/help")
+    btn3 = types.KeyboardButton("/status")
     markup.add(btn1,btn2)
     bot.send_message(message.chat.id,text="Привет, {0.first_name}!".format(message.from_user), reply_markup=markup)
 
@@ -19,7 +20,8 @@ def handle_text(message):
     if (message.text == "/help"):
         bot.send_message(message.chat.id, text="Здесь будут указаны авторы: ", reply_markup=markup)
         
-    elif
+    elif (message.text == "/status"):
+        bot.send_message(message.chat.id, text="Статус: ")
 
 
 
