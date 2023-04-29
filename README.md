@@ -1,1 +1,1 @@
-for install all biliaris this comand; --->  << pip install -r requirements.txt >>
+for install all libraries this comand; --->  << pip install -r requirements.txt >>
