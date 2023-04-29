@@ -3,6 +3,8 @@ now = datetime.now().time()     # импорт времечко нынешнее
 #sab = данное событие
 
 def log (now,sab):   #ФУНКЦИЯ LOG
-  with open (log.txt,r+) with f:
-    f.write(f'main:  time-{now}.  ---> text-{sub} \n')
-    
+  f = pen('log.txt','r+')
+  f.write(f'main:  time-{now}.  ---> text-{sub} \n')
+  f.close()
+
+# purpur
